@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Kalam ;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+ 
+    
+  
+}
+.full{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    background: rgb(35, 35, 74);
+}
+.back{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #000;
+    color: aliceblue;
+    font-size: 20px;
+  
+   
+}
+.box{
+    height: 80%;
+    width: 80%;
+   
+    
+    position: relative;
+    
+    overflow: hidden;
+    gap: 20px;
+    border-radius: 6px;
+    
+
+}
+.slider img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+ .box .slider{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.181);
+    backdrop-filter: blur(5px);
+    transition: all ease 1s;
+    
+   
+}
+.buttons{
+
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+gap:20px;
+
+}
+.slider header{
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+    background: rgb(133, 115, 69);
+    color: white;
+    
+
+}
+.next{
+    width:80px;
+    height: 30px;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cv{
+    width:120px;
+    height: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 30px;
+    background: greenyellow;
+
+}
+.cv a{
+    text-decoration: none;
+    color: #000;
+
+}
+.prev{
+    width:80px;
+    height: 30px;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.personal{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    
+}
+.personal .firstfeild{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+  
+   
+    
+}
+.firstfeild input{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+.adress{
+    width: 80%;
+ 
+}
+.info{
+    height: 100%;
+    width: 100%;
+    gap:40px;
+   
+}
+.info-box{
+    width: 100%;
+    height: 30%;
+    display: flex;
+   
+   
+}
+.info-box .objectives{
+    width: 70%;
+    height: 100%;
+    padding-left: 10px;
+    
+}
+.info-box .objectives .obj{
+    width: 90%;
+    height: 100%;
+}
+.profesion input{
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.info-box .profesion{
+    width: 30%;
+    height: 100%;
+   
+}
+.info header{
+    margin-top: 40px;
+    height: 30px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.school{
+    height: 13%;
+    
+    margin-top: 8px;
+}
+.school h4{
+    text-align: center;
+    font-size: 12px;
+
+    color: white;
+}
+.det{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.det input{
+    width: 200px;
+    text-align: center;
+}
+.slider-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+.work{
+    width: 50%;
+    height: 100%;
+    padding: 5px;
+    position: relative;
+}
+.project{
+    width: 50%;
+}
+.exe{
+    width: 80%;
+    
+}
+.work .add{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    background: brown;
+    color: white;
+    position: absolute;
+    right: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newWork{
+    width: 80%;
+}
+.exe .delet{
+    display: none;
+}
+.newWork .delet{
+    display: flex;
+}
+.project .add-p{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    background: brown;
+    color: white;
+    position: absolute;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adresing{
+    display: flex;
+}
+.box2{
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: white;
+  
+}
+.inner-box{
+  
+    margin-top: 100px;
+    border: 1px solid gray;
+   
+    width: 80%;
+ 
+}
+.inner-box .name{
+    text-align: center;
+}
+.personalbox{
+    width: 90%;
+    
+    padding-left: 40px;
+   
+    /* background: #000; */
+}
+.personalbox header{
+    background: gray;
+   
+    text-transform: uppercase;
+}
+.personalbox  .boxes{
+    width: 100%;
+    height: 100%;
+   
+    display: flex;
+
+    border: 1px solid black;
+}
+
+.leftbox{
+    width: 30%;
+    height: 100%;
+    padding-left: 10px;
+}
+.rightbox{
+    width: 70%;
+    height: 100%;
+   
+}
+.objects{
+    margin-top: 40px;
+    width: 90%;
+  
+    padding-left: 40px;
+    
+}
+.objects header{
+    background: gray;
+    text-transform: uppercase;
+}
+.objbox{
+    width: 100%;
+    height: 100%;
+   
+    display: flex;
+    
+
+    border: 1px solid black;
+
+}
+.education{
+    margin-top: 40px;
+    width: 90%;
+    
+    padding-left: 40px;
+    
+}
+.education header{
+    background: gray;
+    text-transform: uppercase;
+}
+.edubox{
+    width: 100%;
+    height: 100%;
+   
+    display: flex;
+
+    border: 1px solid black;
+
+}
+.leftedubox{
+    width: 30%;
+    height: 100%;
+    padding-left: 10px;
+}
+.schooll{
+    margin-left: 10px;
+}
+.pucc{
+    margin-left: 10px;
+}
+.degreee{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.rightedubox{
+    width: 70%;
+
+}
+.workexperens{
+    margin-top: 40px;
+    width: 100%;
+}
+.workbox{
+    width: 100%;
+    height: 100%;
+   
+    display: flex;
+
+    border: 1px solid black;
+
+}
+.myprojects{
+    margin-top: 40px;
+    width: 100%;
+}
+.projectbox{
+    width: 98%;
+    height: 100%;
+   
+    display: flex;
+    padding: 5px;
+    border: 1px solid black;
+
+}
+.scholl{
+    display: flex;
+    gap: 6px;
+}
+.puc{
+    display: flex;
+    gap: 6px;
+}
+.degree{
+    display: flex;
+    gap: 6px;
+}
